@@ -3,6 +3,7 @@ project "simdjson"
     language "C++"
 	cppdialect "C++20"
     staticruntime "off"
+    vectorextensions "AVX2"
 
     targetdir ("bin/%{prj.name}-%{cfg.buildcfg}/out")
     objdir ("bin/%{prj.name}-%{cfg.buildcfg}/int")
